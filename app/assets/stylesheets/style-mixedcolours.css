@@ -1,0 +1,372 @@
+@import url('fonts/stylesheet.css');
+/* fonts stylesheet */
+/**
+ * The following are all css rules which override the default colour styles set in the other css files, so that each menu item has a different colour.
+ * The active menu item's colour is also applied to other sections throughout the page (ex: image borders and hover colours)
+ *
+ * Colours are defined and obtained from the colour-list.less file
+ *
+ * To apply, add "twlsky-mixedcolours" class to the <body> tag:
+ *
+ * The colours in the menu are the following (in order):
+ * - red
+ * - orange
+ * - yellow
+ * - green
+ * - blue
+ * - pink
+ */
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 1) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 1) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 1) > a {
+  background: #fd1c36 !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #fd1c36 !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #fd1c36 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(253, 28, 54, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(253, 28, 54, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 1) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(253, 28, 54, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 1) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 2) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 2) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 2) > a {
+  background: #fd7b07 !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #fd7b07 !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #fd7b07 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(253, 123, 7, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(253, 123, 7, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 2) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(253, 123, 7, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 2) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 3) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 3) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 3) > a {
+  background: #f4d600 !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #f4d600 !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #f4d600 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(244, 214, 0, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(244, 214, 0, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 3) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(244, 214, 0, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 3) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 4) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 4) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 4) > a {
+  background: #2bd23b !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #2bd23b !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #2bd23b !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(43, 210, 59, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(43, 210, 59, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 4) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(43, 210, 59, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 4) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 5) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 5) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 5) > a {
+  background: #1589ff !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #1589ff !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #1589ff !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(21, 137, 255, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(21, 137, 255, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 5) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(21, 137, 255, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 5) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
+/* ============================================================ */
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-item:nth-child(6n + 6) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.active:nth-child(6n + 6) > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor:nth-child(6n + 6) > a {
+  background: #ff037a !important;
+}
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item > a:hover,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-item > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.active > a,
+.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-ancestor > a {
+  background: #ff037a !important;
+}
+@media (min-width: 768px) {
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6).current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6).active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6).current-menu-ancestor > a {
+    background: transparent !important;
+    border-color: #ff037a !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_right:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: rgba(255, 3, 122, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_right:before,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-right-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:after,
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: rgba(255, 3, 122, 0.7) !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #fff !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu > li.menu-item:nth-child(6n + 6) > .sub-menu .sub-menu.menu_on_the_left:before {
+    border-left-color: #171717 !important;
+  }
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item > a:hover,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-item > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.active > a,
+  .twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #1d1d1d !important;
+    background: rgba(255, 3, 122, 0.4) !important;
+  }
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item > a:hover,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-item > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.active > a,
+  .background-dark.twlsky-mixedcolours header #main-menu-container #main-menu li.menu-item:nth-child(6n + 6) .sub-menu li.menu-item.current-menu-ancestor > a {
+    color: #fff !important;
+  }
+}
