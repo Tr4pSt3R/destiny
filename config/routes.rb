@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  #root 'pages#home' 
-  root to: 'pages#show', id: 'home'  
+  get "/pages/*id" => 'pages#show', as: :page, format: false
+
+  root to: 'pages#show', id: 'home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

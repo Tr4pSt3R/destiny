@@ -19,6 +19,10 @@ group :test, :development do
   gem 'rspec-rails', '~> 3.0'
 end
 
+group 'test' do 
+  gem 'shoulda-matchers', require: false
+end
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
