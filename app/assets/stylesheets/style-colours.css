@@ -15,19 +15,19 @@
  */
 /* ============================================================ */
 .twlsky-red a:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .btn-outline-inverse:hover,
 .twlsky-red .btn-outline-inverse:focus,
 .twlsky-red .btn-outline-inverse:active {
   color: #fff;
-  background-color: #fd1c36;
-  border-color: #fd1c36;
+  background-color: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .btn-theme {
   color: #fff;
-  background: #fd1c36;
-  border-color: #fd1c36;
+  background: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .btn-theme:hover,
 .twlsky-red .btn-theme:focus,
@@ -37,24 +37,24 @@
   border-color: #e4021c;
 }
 .twlsky-red .btn-link:hover {
-  color: #fd1c36 !important;
+  color: #2C469D !important;
 }
 .twlsky-red header #main-menu-container #mobile-menu-icon:hover,
 .twlsky-red header #main-menu-container #mobile-menu-icon.active {
-  background: #fd1c36;
-  border-color: #fd1c36;
+  background: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red header #main-menu-container #main-menu li.menu-item > a:hover,
 .twlsky-red header #main-menu-container #main-menu li.menu-item.current-menu-item > a,
 .twlsky-red header #main-menu-container #main-menu li.menu-item.active > a,
 .twlsky-red header #main-menu-container #main-menu li.menu-item.current-menu-ancestor > a {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red header #main-menu-container #main-menu li.menu-item .sub-menu li.menu-item > a:hover,
 .twlsky-red header #main-menu-container #main-menu li.menu-item .sub-menu li.menu-item.current-menu-item > a,
 .twlsky-red header #main-menu-container #main-menu li.menu-item .sub-menu li.menu-item.active > a,
 .twlsky-red header #main-menu-container #main-menu li.menu-item .sub-menu li.menu-item.current-menu-ancestor > a {
-  background: #fd1c36;
+  background: #2C469D;
 }
 @media (min-width: 768px) {
   .twlsky-red header #main-menu-container #main-menu > li.menu-item > a:hover,
@@ -62,7 +62,7 @@
   .twlsky-red header #main-menu-container #main-menu > li.menu-item.active > a,
   .twlsky-red header #main-menu-container #main-menu > li.menu-item.current-menu-ancestor > a {
     background: transparent;
-    border-color: #fd1c36;
+    border-color: #2C469D;
   }
   .twlsky-red header #main-menu-container #main-menu > li.menu-item > .sub-menu .sub-menu.menu_on_the_right:after,
   .twlsky-red header #main-menu-container #main-menu > li.menu-item > .sub-menu .sub-menu.menu_on_the_left:after,
@@ -104,13 +104,13 @@
 }
 .twlsky-red #top-banner.carousel-container .owl-wrapper-outer,
 .twlsky-red #top-banner .full-width-image {
-  border-color: #fd1c36;
+  border-color: #2C469D;
 }
 .twlsky-red .owl-carousel .item a.text.bottom-full-width:hover {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .owl-carousel .item .text > a:hover {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .owl-carousel .item .text.bottom-full-width > *:hover {
   background: transparent;
@@ -119,21 +119,21 @@
 .twlsky-red .nav-pills > li.active > a:hover,
 .twlsky-red .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #fd1c36;
+  background-color: #2C469D;
 }
 .twlsky-red .nav .open > a,
 .twlsky-red .nav .open > a:hover,
 .twlsky-red .nav .open > a:focus {
   background-color: #eee;
-  border-color: #fd1c36;
+  border-color: #2C469D;
 }
 .twlsky-red .pagination > li > a:hover,
 .twlsky-red .pagination > li > span:hover,
 .twlsky-red .pagination > li > a:focus,
 .twlsky-red .pagination > li > span:focus {
   color: #fff;
-  background-color: #fd1c36;
-  border-color: #fd1c36;
+  background-color: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .pagination > .disabled > span,
 .twlsky-red .pagination > .disabled > span:hover,
@@ -153,13 +153,13 @@
 .twlsky-red .pagination > .active > a:focus,
 .twlsky-red .pagination > .active > span:focus {
   color: #fff;
-  background-color: #fd1c36;
-  border-color: #fd1c36;
+  background-color: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .pager li > a:hover,
 .twlsky-red .pager li > a:focus {
   color: #fff;
-  background-color: #fd1c36;
+  background-color: #2C469D;
 }
 .twlsky-red .pager .disabled > a,
 .twlsky-red .pager .disabled > a:hover,
@@ -172,123 +172,123 @@
 .twlsky-red a.thumbnail:hover,
 .twlsky-red a.thumbnail:focus,
 .twlsky-red a.thumbnail.active {
-  border-color: #fd1c36;
+  border-color: #2C469D;
 }
 .twlsky-red a.list-group-item.active,
 .twlsky-red a.list-group-item.active:hover,
 .twlsky-red a.list-group-item.active:focus {
-  background-color: #fd1c36;
-  border-color: #fd1c36;
+  background-color: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .dropdown-menu > .active > a,
 .twlsky-red .dropdown-menu > .active > a:hover,
 .twlsky-red .dropdown-menu > .active > a:focus {
   color: #fff;
-  background-color: #fd1c36;
+  background-color: #2C469D;
 }
 .twlsky-red .section-header.with-icon .icon {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-header.with-icon:hover .icon {
   background-color: #e4021c;
 }
 .twlsky-red .section-header:hover .text {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .section-container .section-content .vertical-simple-list .item .item-content:hover .date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container .section-content .thumbnail-list > .item .thumbnail .date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container.main-page-content .section-content .thumbnail-list > .item .thumbnail .title a:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .section-container .section-content .thumbnail-list > .item .thumbnail .icon:hover .glyphicon,
 .twlsky-red .section-container .section-content .thumbnail-list > .item .thumbnail .icon:hover .fa {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .section-container .section-content .thumbnail-list > .item.icon-w-bg .thumbnail .icon:hover .glyphicon,
 .twlsky-red .section-container .section-content .thumbnail-list > .item.icon-w-bg .thumbnail .icon:hover .fa {
-  background: #fd1c36;
+  background: #2C469D;
   color: #fff;
 }
 .twlsky-red .section-container .section-content .thumbnail-list.with-text-mask > .item .thumbnail .text-mask {
-  background: #fd1c36;
+  background: #2C469D;
   background: rgba(253, 28, 54, 0.8);
 }
 .twlsky-red .text-mask {
-  background: #fd1c36;
+  background: #2C469D;
   background: rgba(253, 28, 54, 0.8);
 }
 .twlsky-red .section-container .section-content .horizontal-news-list > .item .item-content:hover .date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container .section-content .vertical-news-list > .item .item-content:hover .date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container .section-content .gallery-grid > .gallery-item .mask {
-  background: #fd1c36;
+  background: #2C469D;
   background: rgba(253, 28, 54, 0.7);
 }
 .twlsky-red .section-container .section-content .blog-tag-list > li a:hover {
   color: #fff;
-  background-color: #fd1c36;
-  border-color: #fd1c36;
+  background-color: #2C469D;
+  border-color: #2C469D;
 }
 .twlsky-red .section-container .section-content .media-list > .media .inline-date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container .section-content .media-list > .media:hover .date {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .section-container .section-content .media-list .play-icon {
-  border: 1px solid #fd1c36;
-  color: #fd1c36;
+  border: 1px solid #2C469D;
+  color: #2C469D;
 }
 .twlsky-red .section-container .section-content .media-list .play-icon:hover {
-  background: #fd1c36;
+  background: #2C469D;
   color: #fff;
 }
 .twlsky-red *[class*="img-mask-effect"] .mask {
-  background: #fd1c36;
+  background: #2C469D;
   background: rgba(253, 28, 54, 0.7);
 }
 .twlsky-red .img-mask-effect.bottom-caption {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .img-mask-effect.bottom-caption .mask {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red.loader-bar .pace .pace-progress,
 .twlsky-red.loader-corner .pace .pace-activity {
-  background: #fd1c36;
+  background: #2C469D;
 }
 .twlsky-red .slider-arrows > .arrow:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .blog-article .meta a:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .blog-articles-container.full-width .blog-article .feature-image.full-width-image img {
-  border-color: #fd1c36;
+  border-color: #2C469D;
 }
 .twlsky-red .form-control:focus {
-  border-color: #fd1c36;
+  border-color: #2C469D;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 28, 54, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 28, 54, 0.6);
 }
 .twlsky-red .comments-list > .media .media-footer a:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red #toggle-comment-form:hover .glyphicon,
 .twlsky-red #toggle-comment-form:hover .fa {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red #go-to-top:hover {
-  border-color: #fd1c36;
-  background: #fd1c36;
+  border-color: #2C469D;
+  background: #2C469D;
   color: #fff;
 }
 .twlsky-red .section-container .section-content .sidebar-menu li.menu-item:hover,
@@ -300,34 +300,34 @@
 .twlsky-red .section-container .section-content .sidebar-menu li.menu-item.current-menu-item > a,
 .twlsky-red .section-container .section-content .sidebar-menu li.menu-item.active > a,
 .twlsky-red .section-container .section-content .sidebar-menu li.menu-item.current-menu-ancestor > a {
-  background: #fd1c36;
+  background: #2C469D;
   color: #fff;
 }
 .twlsky-red .social-media-icons > li > *:hover,
 .twlsky-red #beneath-footer .social-media-icons > li > *:hover {
   color: #fff;
-  border-color: #fd1c36;
-  background: #fd1c36;
+  border-color: #2C469D;
+  background: #2C469D;
 }
 .twlsky-red .page-not-found-container .content-404 .glyphicon,
 .twlsky-red .page-not-found-container .content-404 .fa {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .breadcrumbs > li > *:hover,
 .twlsky-red .breadcrumb > li > *:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red header #main-menu-container #search-container #search-input #search-close:hover {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red header #main-menu-container #search-container #search-icon:hover,
 .twlsky-red header #main-menu-container #search-container #search-icon.active {
-  color: #fd1c36;
+  color: #2C469D;
 }
 .twlsky-red .pagination-container .pagination-list > li > *:hover,
 .twlsky-red .pagination-container .pagination-list > li.active > * {
-  background: #fd1c36;
-  border-color: #fd1c36;
+  background: #2C469D;
+  border-color: #2C469D;
 }
 /* ============================================================ */
 .twlsky-orange a:hover {
