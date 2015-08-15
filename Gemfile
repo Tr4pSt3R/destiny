@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -12,14 +13,18 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+group 'production' do
+  gem 'rails_12factor'
+end
+
 gem 'haml', '~> 4.0.5'
 gem 'high_voltage', '~> 2.2.1'
 
-group :test, :development do 
+group :test, :development do
   gem 'rspec-rails', '~> 3.0'
 end
 
-group 'test' do 
+group 'test' do
   gem 'shoulda-matchers', require: false
 end
 
@@ -50,3 +55,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+ruby "2.2.0"
