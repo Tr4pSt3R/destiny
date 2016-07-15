@@ -6,10 +6,10 @@
 */
 
 /* import stylesheet which overrides default bootstrap styles for this theme */
-@import url('base.css');
+@import url('<%= asset_path("base.css") %>');
 
 /* fonts stylesheet */
-@import url('fonts/stylesheet.css');
+@import url('<%= asset_path("fonts/stylesheet.css") %>');
 
 /* ====================================================
    BACKGROUND IMAGE
@@ -2196,7 +2196,7 @@ footer .section-container .section-content .vertical-simple-list.contact-list .c
     width:40px;
     float:right;
     margin-right:5px;
-    background:url(../images/design/section_header_arrow.png) no-repeat center right;
+    background:url('<%= asset_path("section_header_arrow.png") %>') no-repeat center right;
     opacity: 0.6;
     filter: alpha(opacity=60);
     -webkit-transition: all 0.4s;
@@ -2480,7 +2480,7 @@ footer .section-container .section-content .vertical-simple-list.contact-list .c
     display:block;
     width:100%;
     height: 40px;
-    background: url(../images/design/gallery-loader.gif) no-repeat center center;
+    background: url('<%= asset_path("gallery-loader.gif") %>') no-repeat center center;
     position:absolute;
     top:0;
     left:0;

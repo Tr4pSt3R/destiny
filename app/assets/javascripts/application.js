@@ -11,9 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.easing.1.3
 //= require jquery_ujs
 //= require turbolinks
 //= require plugins/pace/pace.min
 //= require plugins/owl-carousel/owl.carousel.min
+//= require initialise-functions
+//= require detectmobilebrowser
+//= require bootstrap.min
 //= require functions
+//= require plugins/masonry/masonry.pkgd.min
+//= require plugins/lightbox/js/lightbox.min
 //= require_tree .
