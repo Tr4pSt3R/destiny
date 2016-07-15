@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
+gem 'puma'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -54,5 +55,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-ruby "2.2.0"
