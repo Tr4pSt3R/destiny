@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require plugins/pace/pace.min
+//= require plugins/owl-carousel/owl.carousel.min
+//= require functions
 //= require_tree .
