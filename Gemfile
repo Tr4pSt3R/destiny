@@ -6,6 +6,7 @@ gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 gem 'puma'
+gem 'font-awesome-rails', '~> 4.6.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
