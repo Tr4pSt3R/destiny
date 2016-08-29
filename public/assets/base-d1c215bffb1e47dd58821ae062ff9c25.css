@@ -1,0 +1,502 @@
+/*
+ * This stylesheet mainly set the base css rules for the TWILLI Sky theme, which override the default bootstrap theme styling.
+ *
+ * -- This stylesheet should be load AFTER the bootstrap CSS files
+ */
+
+/* fonts stylesheet */
+/*@import url('fonts/stylesheet.css');*/
+
+/* ========== General ========== */
+
+
+html {
+    width:100%;
+    height:100%;
+}
+
+body {
+    font-family: 'open_sanslight', sans-serif;
+    color: #1d1d1d;
+    background: #f0f0f0 url('/assets/handmadepaper.png') repeat;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    line-height:1.9;
+    -webkit-transition: background 0.4s;
+    transition: background 0.4s;
+}
+
+ /* TODO: store image locally rather than grabbing it from the net */
+.background-light { background-color: #f0f0f0; background-image: url('https://subtlepatterns.com/patterns/handmadepaper.png'); }
+.background-dark { background-color: #1f1f1f; background-image: url('/assets/background_dark.jpg'); }
+/*.isolated-sections.background-dark { background-color: #3a3a3a, background-image: url('background_less_darker.jpg'); }*/
+
+b, strong {
+    font-weight: normal;
+    font-family: 'open_sanssemibold', sans-serif;
+}
+
+em {
+    font-family: 'open_sanslight_italic', sans-serif;
+}
+em strong,
+em b,
+strong em,
+b em {
+    font-family: 'open_sanssemibold_italic', sans-serif;
+}
+
+a,
+button,
+.btn {
+    text-decoration: none;
+    outline: none !important;
+}
+
+a {
+    color:#1d1d1d;
+    font-weight: normal;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+a:hover {
+    color:#fd1c36; /* more colours in style-colours.css */
+    text-decoration: none;
+}
+
+p a {
+    padding-bottom:1px;
+    border-bottom:1px dotted #a8a8a8;
+    font-family: 'open_sansregular', sans-serif;
+}
+p a:hover {
+    border-color:#1d1d1d;
+}
+
+a:active, a:focus {
+    text-decoration: none;
+}
+
+/* ========== Typography ========== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'open_sanslight', sans-serif;
+    font-weight: normal;
+}
+
+h1, .h1 {
+    font-size: 2.14em;
+    line-height: 1.27;
+}
+h2, .h2 {
+    font-size: 1.86em;
+    line-height: 1.46;
+}
+h3, .h3 {
+    font-size: 1.43em;
+    line-height: 1.65;
+}
+h4, .h4 {
+    font-size: 1.29em;
+    line-height: 1.65;
+}
+h5, .h5 {
+    font-size: 1.21em;
+    line-height: 1.55;
+}
+h6, .h6 {
+    font-size: 1.07em;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 0 1.1em;
+}
+
+* + p {
+    margin-top:1.2em;
+}
+
+/* ========== Blockquotes ========== */
+
+blockquote footer, blockquote small, blockquote .small {
+    color: #898989;
+}
+
+/* ========== Lists ========== */
+
+ul, ol {
+    margin-bottom:1.2em;
+}
+
+* + ul, * + ol {
+    margin-top:1.2em;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+}
+
+dl {
+    margin-bottom:2em;
+}
+
+* + dl {
+    margin-top:2em;
+}
+
+dt {
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: bold;
+}
+
+/* ========== Code ========== */
+
+pre {
+    border-radius: 0;
+}
+
+/* ========== Tables ========== */
+
+.table {
+    margin-bottom:2em;
+}
+
+* + .table {
+    margin-top:2em;
+}
+
+th {
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: bold;
+}
+
+.table-hover > tbody > tr > td,
+.table-hover > tbody > tr > th {
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+}
+
+/* ========== Forms ========== */
+
+form {
+    margin-bottom:1.5em;
+}
+
+* + form {
+    margin-top:1.5em;
+}
+
+label {
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: bold;
+}
+
+.radio label, .checkbox label {
+    font-family: 'open_sanslight', sans-serif;
+    font-weight: normal;
+}
+
+.form-control {
+    border-radius:0;
+}
+
+.form-control:focus {
+    border-color: #fd1c36;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(253,28,54,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(253,28,54,.6);
+    /* more colours in style-colours.css */
+}
+
+/* ========== Buttons ========== */
+
+.btn {
+    border-radius: 0;
+    font-family: 'open_sansregular', sans-serif;
+    font-weight: normal;
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 1.21;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    color:#fff !important;
+}
+.btn-default:hover {
+    color:#333 !important;
+}
+.btn-link:hover {
+    color:#fd1c36 !important; /* more colours in style-colours.css */
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 7px 16px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: 4px 12px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 14px 33px;
+    font-size: 14px;
+    line-height: 1.21;
+}
+
+/* ========== Images ========== */
+
+.img-rounded {
+    border-radius: 0;
+}
+
+.img-thumbnail {
+    border-radius: 0;
+}
+
+/* ========== Helpers ========== */
+
+.close {
+    font-family: 'open_sansbold', sans-serif;
+}
+
+/* ========== Tabs, Pills ========== */
+
+.nav-tabs > li {
+    font-family: 'open_sansregular', sans-serif;
+}
+
+.nav-pills > li > * {
+    font-family: 'open_sansregular', sans-serif;
+}
+
+.nav-pills > li > a {
+    border-radius: 0;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #eee;
+    border-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+/* ========== Pagination ========== */
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #1d1d1d;
+    background-color: #fff;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #fff;
+    background-color: #fd1c36; /* more colours in style-colours.css */
+    border-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #999;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #fd1c36; /* more colours in style-colours.css */
+    border-color: #fd1c36; /* more colours in style-colours.css */
+    cursor: default;
+}
+
+/* ========== Pager ========== */
+
+.pager li > a,
+.pager li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+    text-decoration: none;
+    color:#fff;
+    background-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+.pager .disabled>a, .pager .disabled>a:hover, .pager .disabled>a:focus, .pager .disabled>span {
+    color: #999;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+/* ========== Labels, Badges ========== */
+
+.label {
+    display: inline;
+    padding: .45em .65em .45em;
+    font-size: 75%;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+    font-family: 'open_sansbold', sans-serif;
+    border-radius: 0;
+}
+
+.badge {
+    font-weight: normal;
+    font-family: 'open_sansbold', sans-serif;
+}
+
+/* ========== Thumbnails ========== */
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+/* ========== List Group ========== */
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+    background-color: #fd1c36; /* more colours in style-colours.css */
+    border-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+/* ========== Modals ========== */
+
+.modal-content {
+    border-radius:0;
+}
+
+/* ========== Dropdown Menu ========== */
+
+.dropdown-menu {
+    border-radius:0;
+}
+
+/* ========== Navbar ========== */
+
+.navbar {
+    border-radius: 0;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #fd1c36; /* more colours in style-colours.css */
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+/* ========== Collapse ========== */
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-heading {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* ========== Alerts ========== */
+
+.alert {
+    border-radius: 0;
+}
+
+/* ========== Progress Bar ========== */
+
+.progress {
+    border-radius: 0;
+}
+
+/* ========== Pull Left/Right ========== */
+.pull-left,
+.media > .pull-left {
+    margin-right:10px;
+}
+.pull-right,
+.media > .pull-right {
+    margin-left:10px;
+}
+    @media (min-width: 768px) {
+        .pull-left,
+        .media > .pull-left {
+            margin-right:23px;
+        }
+        .pull-right,
+        .media > .pull-right {
+            margin-left:23px;
+        }
+    }
+    @media (min-width: 992px) {
+        .pull-left,
+        .media > .pull-left {
+            margin-right:35px;
+        }
+        .pull-right,
+        .media > .pull-right {
+            margin-left:35px;
+        }
+    }
+    @media (min-width: 1200px) {
+    }
+
+/* ========== Media List ========== */
+.media .media-heading {
+    margin-top:1px;
+}
+    @media (min-width: 768px) {
+        .media .media-heading {
+            margin-top:3px;
+        }
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1200px) {
+    }
