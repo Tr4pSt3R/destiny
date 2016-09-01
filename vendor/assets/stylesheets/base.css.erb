@@ -26,10 +26,17 @@ body {
     transition: background 0.4s;
 }
 
- /* TODO: store image locally rather than grabbing it from the net */
-.background-light { background-color: #f0f0f0; background-image: url('https://subtlepatterns.com/patterns/handmadepaper.png'); }
-.background-dark { background-color: #1f1f1f; background-image: url('<%= asset_path("background_dark.jpg") %>'); }
-/*.isolated-sections.background-dark { background-color: #3a3a3a, background-image: url('background_less_darker.jpg'); }*/
+.background-light {
+  background-color: #f0f0f0;
+  background-image: url('<%= asset_path("background_light.png") %>');
+}
+
+.background-dark {
+  background-color: #1f1f1f;
+  background-image: url('<%= asset_path("background_dark.jpg") %>');
+}
+  /*
+  .isolated-sections.background-dark { background-color: #3a3a3a, background-image: url('background_less_darker.jpg'); }*/
 
 b, strong {
     font-weight: normal;
