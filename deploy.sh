@@ -1,13 +1,13 @@
 #!/bin/bash -l
 
-echo "Precompiling assets..."
+printf "Precompiling assets..."
 bundle exec rake assets:precompile --trace
-echo "Completed precompiling assets!"
+printf "Completed precompiling assets!\n"
 
-echo "Updating version control with latest asset builds..."
+printf "Updating version control with latest asset builds..."
 git add . && git ci -m "Update version control with latest asset builds"
-echo "Updated version control with latest assets."
+printf "Updated version control with latest assets.\n"
 
-echo "Pushing to Heroku production environment..."
+printf "Pushing to Heroku production environment..."
 git push heroku master
-echo "Completed deployment to Heroku production environment!"
+printf "Completed deployment to Heroku production environment!\n"
