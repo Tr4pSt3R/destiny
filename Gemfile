@@ -7,6 +7,7 @@ gem 'rails', '4.1.6'
 gem 'pg'
 gem 'puma'
 gem 'font-awesome-rails', '~> 4.6.2'
+gem 'rails_serve_static_assets'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
