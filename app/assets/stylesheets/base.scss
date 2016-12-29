@@ -4,11 +4,7 @@
  * -- This stylesheet should be load AFTER the bootstrap CSS files
  */
 
-/* fonts stylesheet */
-/*@import url('fonts/stylesheet.css');*/
-
 /* ========== General ========== */
-
 
 html {
     width:100%;
@@ -18,7 +14,7 @@ html {
 body {
     font-family: 'open_sanslight', sans-serif;
     color: #1d1d1d;
-    background: #f0f0f0 url('/assets/handmadepaper.png') repeat;
+    background: #f0f0f0 image-url('handmadepaper.png') repeat;
     width:100%;
     height:100%;
     font-size:14px;
@@ -29,15 +25,19 @@ body {
 
 .background-light {
   background-color: #f0f0f0;
-  background-image: url('/assets/background_light.jpg');
+  background-image: image-url('background_light.jpg');
 }
 
 .background-dark {
   background-color: #1f1f1f;
-  background-image: url('/assets/background_dark.jpg');
+  background-image: image-url('background_dark.jpg');
 }
-  /*
-  .isolated-sections.background-dark { background-color: #3a3a3a, background-image: url('background_less_darker.jpg'); }*/
+
+/*
+.isolated-sections.background-dark
+    background-color: #3a3a3a, background-image: image-url('background_less_darker.jpg');
+    }
+ */
 
 b, strong {
     font-weight: normal;

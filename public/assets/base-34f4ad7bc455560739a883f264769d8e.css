@@ -1,0 +1,589 @@
+/*
+ * This stylesheet mainly set the base css rules for the TWILLI Sky theme, which override the default bootstrap theme styling.
+ *
+ * -- This stylesheet should be load AFTER the bootstrap CSS files
+ */
+/* ========== General ========== */
+/* line 10, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+body {
+  font-family: 'open_sanslight', sans-serif;
+  color: #1d1d1d;
+  background: #f0f0f0 url(/assets/handmadepaper.png) repeat;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.9;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+/* line 27, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.background-light {
+  background-color: #f0f0f0;
+  background-image: url(/assets/background_light.jpg);
+}
+
+/* line 32, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.background-dark {
+  background-color: #1f1f1f;
+  background-image: url(/assets/background_dark.jpg);
+}
+
+/*
+.isolated-sections.background-dark
+    background-color: #3a3a3a, background-image: image-url('background_less_darker.jpg');
+    }
+ */
+/* line 43, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+b, strong {
+  font-weight: normal;
+  font-family: 'open_sanssemibold', sans-serif;
+}
+
+/* line 48, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+em {
+  font-family: 'open_sanslight_italic', sans-serif;
+}
+
+/* line 54, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+em strong,
+em b,
+strong em,
+b em {
+  font-family: 'open_sanssemibold_italic', sans-serif;
+}
+
+/* line 60, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a,
+button,
+.btn {
+  text-decoration: none;
+  outline: none !important;
+}
+
+/* line 65, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a {
+  color: #1d1d1d;
+  font-weight: normal;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 71, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a:hover {
+  color: #fd1c36;
+  /* more colours in style-colours.css */
+  text-decoration: none;
+}
+
+/* line 76, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+p a {
+  padding-bottom: 1px;
+  border-bottom: 1px dotted #a8a8a8;
+  font-family: 'open_sansregular', sans-serif;
+}
+
+/* line 81, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+p a:hover {
+  border-color: #1d1d1d;
+}
+
+/* line 85, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a:active, a:focus {
+  text-decoration: none;
+}
+
+/* ========== Typography ========== */
+/* line 102, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'open_sanslight', sans-serif;
+  font-weight: normal;
+}
+
+/* line 107, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h1, .h1 {
+  font-size: 2.14em;
+  line-height: 1.27;
+}
+
+/* line 111, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h2, .h2 {
+  font-size: 1.86em;
+  line-height: 1.46;
+}
+
+/* line 115, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h3, .h3 {
+  font-size: 1.43em;
+  line-height: 1.65;
+}
+
+/* line 119, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h4, .h4 {
+  font-size: 1.29em;
+  line-height: 1.65;
+}
+
+/* line 123, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h5, .h5 {
+  font-size: 1.21em;
+  line-height: 1.55;
+}
+
+/* line 127, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+h6, .h6 {
+  font-size: 1.07em;
+  line-height: 1.5;
+}
+
+/* line 132, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+p {
+  margin: 0 0 1.1em;
+}
+
+/* line 136, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+* + p {
+  margin-top: 1.2em;
+}
+
+/* ========== Blockquotes ========== */
+/* line 142, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+blockquote footer, blockquote small, blockquote .small {
+  color: #898989;
+}
+
+/* ========== Lists ========== */
+/* line 148, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+ul, ol {
+  margin-bottom: 1.2em;
+}
+
+/* line 152, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+* + ul, * + ol {
+  margin-top: 1.2em;
+}
+
+/* line 156, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+ul ul, ul ol, ol ul, ol ol {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+/* line 161, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+dl {
+  margin-bottom: 2em;
+}
+
+/* line 165, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+* + dl {
+  margin-top: 2em;
+}
+
+/* line 169, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+dt {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: bold;
+}
+
+/* ========== Code ========== */
+/* line 176, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+pre {
+  border-radius: 0;
+}
+
+/* ========== Tables ========== */
+/* line 182, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.table {
+  margin-bottom: 2em;
+}
+
+/* line 186, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+* + .table {
+  margin-top: 2em;
+}
+
+/* line 190, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+th {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: bold;
+}
+
+/* line 196, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.table-hover > tbody > tr > td,
+.table-hover > tbody > tr > th {
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+/* ========== Forms ========== */
+/* line 203, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+form {
+  margin-bottom: 1.5em;
+}
+
+/* line 207, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+* + form {
+  margin-top: 1.5em;
+}
+
+/* line 211, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+label {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: bold;
+}
+
+/* line 216, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.radio label, .checkbox label {
+  font-family: 'open_sanslight', sans-serif;
+  font-weight: normal;
+}
+
+/* line 221, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.form-control {
+  border-radius: 0;
+}
+
+/* line 225, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.form-control:focus {
+  border-color: #fd1c36;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 28, 54, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 28, 54, 0.6);
+  /* more colours in style-colours.css */
+}
+
+/* ========== Buttons ========== */
+/* line 235, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn {
+  border-radius: 0;
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: normal;
+  padding: 8px 20px;
+  font-size: 14px;
+  line-height: 1.21;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 246, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn:hover {
+  color: #fff !important;
+}
+
+/* line 249, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn-default:hover {
+  color: #333 !important;
+}
+
+/* line 252, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn-link:hover {
+  color: #fd1c36 !important;
+  /* more colours in style-colours.css */
+}
+
+/* line 256, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn-sm, .btn-group-sm > .btn {
+  padding: 7px 16px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* line 262, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn-xs, .btn-group-xs > .btn {
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* line 268, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.btn-lg, .btn-group-lg > .btn {
+  padding: 14px 33px;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+/* ========== Images ========== */
+/* line 276, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.img-rounded {
+  border-radius: 0;
+}
+
+/* line 280, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.img-thumbnail {
+  border-radius: 0;
+}
+
+/* ========== Helpers ========== */
+/* line 286, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.close {
+  font-family: 'open_sansbold', sans-serif;
+}
+
+/* ========== Tabs, Pills ========== */
+/* line 292, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav-tabs > li {
+  font-family: 'open_sansregular', sans-serif;
+}
+
+/* line 296, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav-pills > li > * {
+  font-family: 'open_sansregular', sans-serif;
+}
+
+/* line 300, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* line 306, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* line 313, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eee;
+  border-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* ========== Pagination ========== */
+/* line 321, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pagination > li > a,
+.pagination > li > span {
+  color: #1d1d1d;
+  background-color: #fff;
+}
+
+/* line 329, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #fff;
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+  border-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* line 335, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  color: #999;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* line 347, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+  border-color: #fd1c36;
+  /* more colours in style-colours.css */
+  cursor: default;
+}
+
+/* ========== Pager ========== */
+/* line 358, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+/* line 367, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* line 373, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+  color: #999;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+/* ========== Labels, Badges ========== */
+/* line 381, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.label {
+  display: inline;
+  padding: .45em .65em .45em;
+  font-size: 75%;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  font-family: 'open_sansbold', sans-serif;
+  border-radius: 0;
+}
+
+/* line 392, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.badge {
+  font-weight: normal;
+  font-family: 'open_sansbold', sans-serif;
+}
+
+/* ========== Thumbnails ========== */
+/* line 401, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* ========== List Group ========== */
+/* line 409, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+  border-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* ========== Modals ========== */
+/* line 416, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.modal-content {
+  border-radius: 0;
+}
+
+/* ========== Dropdown Menu ========== */
+/* line 422, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.dropdown-menu {
+  border-radius: 0;
+}
+
+/* ========== Navbar ========== */
+/* line 428, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.navbar {
+  border-radius: 0;
+}
+
+/* line 434, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  background-color: #fd1c36;
+  /* more colours in style-colours.css */
+}
+
+/* line 439, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
+/* ========== Collapse ========== */
+/* line 445, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.panel-group .panel {
+  border-radius: 0;
+}
+
+/* line 449, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.panel-heading {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* ========== Alerts ========== */
+/* line 456, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.alert {
+  border-radius: 0;
+}
+
+/* ========== Progress Bar ========== */
+/* line 462, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.progress {
+  border-radius: 0;
+}
+
+/* ========== Pull Left/Right ========== */
+/* line 468, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pull-left,
+.media > .pull-left {
+  margin-right: 10px;
+}
+
+/* line 472, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.pull-right,
+.media > .pull-right {
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  /* line 477, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+  .pull-left,
+  .media > .pull-left {
+    margin-right: 23px;
+  }
+
+  /* line 481, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+  .pull-right,
+  .media > .pull-right {
+    margin-left: 23px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 487, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+  .pull-left,
+  .media > .pull-left {
+    margin-right: 35px;
+  }
+
+  /* line 491, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+  .pull-right,
+  .media > .pull-right {
+    margin-left: 35px;
+  }
+}
+/* ========== Media List ========== */
+/* line 499, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+.media .media-heading {
+  margin-top: 1px;
+}
+
+@media (min-width: 768px) {
+  /* line 503, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/base.scss */
+  .media .media-heading {
+    margin-top: 3px;
+  }
+}

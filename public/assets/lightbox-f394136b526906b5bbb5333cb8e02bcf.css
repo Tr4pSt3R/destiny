@@ -1,12 +1,11 @@
 /* Preload images */
+/* line 3, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 body:after {
-  content: image-url('close.png')
-           image-url('loading.gif')
-           image-url('prev.png')
-           image-url('next.png')
+  content: url(/assets/close.png), url(/assets/loading.gif), url(/assets/prev.png), url(/assets/next.png);
   display: none;
 }
 
+/* line 11, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lightboxOverlay {
   position: absolute;
   top: 0;
@@ -18,6 +17,7 @@ body:after {
   display: none;
 }
 
+/* line 22, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lightbox {
   position: absolute;
   left: 0;
@@ -28,6 +28,7 @@ body:after {
   font-weight: normal;
 }
 
+/* line 32, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lightbox .lb-image {
   display: block;
   height: auto;
@@ -39,10 +40,12 @@ body:after {
   border-radius: 3px;
 }
 
+/* line 43, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lightbox a img {
   border: none;
 }
 
+/* line 47, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-outerContainer {
   position: relative;
   background-color: white;
@@ -57,16 +60,19 @@ body:after {
   border-radius: 4px;
 }
 
+/* line 61, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-outerContainer:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 67, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-container {
   padding: 4px;
 }
 
+/* line 71, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-loader {
   position: absolute;
   top: 43%;
@@ -77,14 +83,16 @@ body:after {
   line-height: 0;
 }
 
+/* line 81, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-cancel {
   display: block;
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url('<%= asset_path("loading.gif") %>') no-repeat;
+  background: url(/assets/loading.gif) no-repeat;
 }
 
+/* line 89, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav {
   position: absolute;
   top: 0;
@@ -94,27 +102,30 @@ body:after {
   z-index: 10;
 }
 
+/* line 98, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-container > .nav {
   left: 0;
 }
 
+/* line 102, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
+/* line 107, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
 }
 
+/* line 113, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
   float: left;
-  background: url('<%= asset_path("prev.png") %>') left 48% no-repeat;
-
+  background: url(/assets/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -123,16 +134,18 @@ body:after {
   transition: opacity 0.6s;
 }
 
+/* line 127, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav a.lb-prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
+/* line 132, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav a.lb-next {
   width: 64%;
   right: 0;
   float: right;
-  background: url('<%= asset_path("next.png") %>') right 48% no-repeat;
+  background: url(/assets/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -141,11 +154,13 @@ body:after {
   transition: opacity 0.6s;
 }
 
+/* line 145, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-nav a.lb-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
+/* line 150, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
@@ -159,17 +174,20 @@ body:after {
   border-bottom-right-radius: 4px;
 }
 
+/* line 163, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-dataContainer:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* line 169, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data {
   padding: 0 4px;
   color: #ccc;
 }
 
+/* line 174, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data .lb-details {
   width: 85%;
   float: left;
@@ -177,12 +195,14 @@ body:after {
   line-height: 1.1em;
 }
 
+/* line 181, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data .lb-caption {
   font-size: 13px;
   font-weight: bold;
   line-height: 1em;
 }
 
+/* line 187, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data .lb-number {
   display: block;
   clear: left;
@@ -191,12 +211,13 @@ body:after {
   color: #999999;
 }
 
+/* line 195, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data .lb-close {
   display: block;
   float: right;
   width: 30px;
   height: 30px;
-  background: url('<%= asset_path("close.png") %>') top right no-repeat;
+  background: url(/assets/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -207,6 +228,7 @@ body:after {
   transition: opacity 0.2s;
 }
 
+/* line 211, /Users/jonesagyemang/Projects/side_projects/destiny/app/assets/stylesheets/lightbox.scss */
 .lb-data .lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
